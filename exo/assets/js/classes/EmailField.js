@@ -1,9 +1,7 @@
-class Field {
-    #element;
-    #errors;
-    #name;
-    
-    constructor(element, errors, name)
+ class EmailField extends Field{
+     
+     
+      constructor(element, errors, name)
     {
         this.#element = element;
         this.#errors = [];
@@ -35,5 +33,8 @@ class Field {
     serialize(){
         
     }
-    
-    export { Field };
+    validate{
+        
+    }
+}
+ 

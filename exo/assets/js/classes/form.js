@@ -1,10 +1,10 @@
-class form {
+class Form {
     #fields;
     #submitted;
     
     constructor(fields, submitted)
     {
-        this.#fields = fields;
+        this.#fields = [];
         this.#submitted = submitted;
     }
 
@@ -17,7 +17,7 @@ class form {
     }
 
     set submitted () {
-        this.#subgrade = name;
+        this.#submitted = name;
     }
  
     addField(field){
@@ -32,3 +32,6 @@ class form {
     toJSON(){
         
     }
+    
+    export { Form };
+}
